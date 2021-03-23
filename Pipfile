@@ -5,7 +5,9 @@ name = "pypi"
 
 [packages]
 flask = "*"
-requests-oauthlib = "*"
+requests = "*"
+flask-discord = "*"
+python-dotenv = "*"
 
 [dev-packages]
 pylint-runner = "*"
