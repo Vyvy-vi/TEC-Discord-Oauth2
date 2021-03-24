@@ -12,9 +12,9 @@ app.config["SECRET_KEY"] = os.environ["SECRET_KEY"]
 
 client_id = os.environ["DISCORD_CLIENT_ID"]
 client_secret = os.environ["DISCORD_CLIENT_SECRET"]
-redirect = "http://127.0.0.1:5000/login"
-scopes = "identify%20email%20guilds%20guilds.join"
-discord_login_uri="https://discord.com/api/oauth2/authorize?client_id=823513385848537119&redirect_uri=http%3A%2F%2F127.0.0.1%3A5000%2Flogin&response_type=code&scope=identify%20email%20guilds%20guilds.join"
+redirect = "http://127.0.0.1:5000/callback"
+scopes = "identify%20guilds.join"
+discord_login_uri="https://discord.com/api/oauth2/authorize?client_id=823513385848537119&redirect_uri=http%3A%2F%2F127.0.0.1%3A5000%2Fcallback&response_type=code&scope=identify%20guilds.join"
 discord_token_uri="https://discord.com/api/oauth2/token"
 discord_api_uri="https://discord.com/api"
 
