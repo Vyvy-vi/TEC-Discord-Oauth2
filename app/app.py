@@ -20,7 +20,7 @@ discord = DiscordOAuth2Session(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html', invite_link='/login')
+    return render_template('index.html', _link='/login')
 
 @app.route("/login/")
 def login():
@@ -39,16 +39,7 @@ def redirect_unauthorized(e):
 @requires_authorization
 def me():
     user = discord.fetch_user()
-    return f"""
-    <html>
-        <head>
-            <title>{user.name}</title>
-        </head>
-        <body>
-            <img src='{user.avatar_url}' />
-            <h1>{user.id}</h1>
-        </body>
-    </html>"""
+    return render_template('join.html', user=user.name, img=user.avatar_url, _link='/join')
 
 @app.route("/join/")
 @requires_authorization
@@ -62,7 +53,7 @@ def join():
             }
     res =requests.put(url=url, json=data, headers=headers)
     print(res.status_code)
-    return "added"
+    return "You have been added to the server"
 
 if __name__ == "__main__":
     app.run()
