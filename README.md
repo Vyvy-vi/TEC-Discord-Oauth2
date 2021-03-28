@@ -1,5 +1,13 @@
 # TEC-Discord-Oauth2
-Testing repo to try out discord's Oauth2 API to give privileged access to users that complete Captcha.
+"Proof of Concept" repo to try out discord's Oauth2 API to give privileged access to users that complete Captcha.
+The main problem with communicating on discord is that the accounts can easily be botted and thus launching DM spam and scam is quite easy on discord and currently there is no way of preventing this in Discord, without restricting DMs entirely for the server. A possible solution is to have an external site, where ppl are added to the server, only if they complete captcha.
+(this was specifically made for [TECommons' discord server](http://tecommons.org/), but can be modified to others' needs)
+
+## Walkthrough
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/62864373/112768300-18e30980-9039-11eb-8e74-e189c5bd264a.gif" alt="Oauth Sample GIF"/>
+</p>
 
 ## How to get a local instance running?
 - Make a new Application on [Discord Developer Platform](https://discord.com/developers/) and add a bot to that application. Go to the Oauth section, and add `http://127.0.0.1/callback` to the Redirect URI section.
