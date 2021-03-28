@@ -6,7 +6,7 @@ The main problem with communicating on discord is that the accounts can easily b
 ## Walkthrough
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/62864373/112768300-18e30980-9039-11eb-8e74-e189c5bd264a.gif" alt="Oauth Sample GIF"/>
+  <img src="https://user-images.githubusercontent.com/62864373/112768563-3369b280-903a-11eb-9d27-465f2572041d.gif" alt="Oauth Sample GIF"/>
 </p>
 
 ## How to get a local instance running?
