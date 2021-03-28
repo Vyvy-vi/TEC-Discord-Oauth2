@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>{{user}} - join server</title>
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>
 </head>
 <body>
     <center>
@@ -18,10 +19,10 @@
             <div class="font-bold text-xl mb-2">{{user}}</div>
             <p class="text-gray-700 text-base">TEC - Advancing Token Engineering<br>Click below to join the server</p>
         </div>
-        <div class="px-6 py-4 text-center">
-            <a href="{{_link}}"><button type="submit" class="justify-center py-2 px-4 text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 focus:outline-none">Join</button></a>
-        </div>
-        </div>
+        <form action="" method="POST"><center>
+            <div class="h-captcha" data-sitekey={{ key }}></div>
+            <button type="submit" class="justify-center py-2 px-4 text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 focus:outline-none mb-2">Join</button>
+        </form></center>
     </div>
 
 </body>
