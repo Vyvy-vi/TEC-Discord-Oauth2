@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <title>TEC - Advancing Token Engineering</title>
+</head>
+<body>
+    <style>
+        body {
+            background: rgb(0,0,0);
+        }
+        .flex {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        .card {
+            border: 4px solid rgb(213, 255, 0);
+            border-radius: 4px;
+            box-shadow:
+            0 3px 3px rgba(213, 255, 0, 0.034),
+            0 6px 6px rgba(213, 255, 0, 0.048),
+            0 12px 10px rgba(213, 255, 0, 0.06),
+            0 22px 17px rgba(213, 255, 0, 0.072),
+            0 42px 34px rgba(213, 255, 0, 0.086),
+            0 100px 80px rgba(213, 255, 0, 0.12);
+            0 210px 120px rgba(213, 255, 0, 0.2);
+       }
+        .logo {
+            width: 100%
+        }
+        button {
+            margin: 10px 0px 30px 0px;
+            padding: 4px 2px;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        .heads {
+            font-family: sans-serif;
+            font-size: 35px;
+        }
+
+    </style>
+    <div class="flex">
+        <div class='card'>
+            <img class="logo" src="https://cdn.discordapp.com/icons/776352494992883722/0000b679a3e5f283653a38e138a43f9b.webp?size=128" alt="TEC Logo"/>
+            <div style="padding: 2px 16px; text-align: center; color: white; width: 300px;">
+                <p class="heads"><b>Token Engineering Commons</b></p>
+                <h4>Advancing Token Engineering</h4>
+                <p>Sustainable & Ethical Design for Token Ecosystems. Discord is the main communiction tool used by TEC. Before Entering the server, you would have to fill captcha to prove that you're not a bot.'Click below to log in with discord:</p>
+                <a href="{{_link}}"><button type="submit">Log in</button></a> 
+            </div>
+        </div>
+    </div>
+   <!--  https://cdn.discordapp.com/icons/776352494992883722/0000b679a3e5f283653a38e138a43f9b.webp?size=128 -->
+</body>
+</html>
