@@ -66,7 +66,7 @@ def me():
                 }
                 res = requests.put(url=url, json=data, headers=headers)
                 return "You have been added to the server"
-        return redirect(url_for('me'))
+    return redirect(url_for('me'))
 
 if __name__ == "__main__":
     app.run()
