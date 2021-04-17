@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap');
 
 html, body {
     margin: 0;
@@ -40,7 +40,6 @@ html, body {
     text-transform: uppercase;
     /* text-shadow: 0 0 4px #03B3FF;*/
     /*border: 2.7px solid #03B3FF;*/
-    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     text-shadow: 2px 0 0 #03B3FF,
                  -2px 0 0 #03B3FF,
                  0 2px 0 #03B3FF,
@@ -48,16 +47,27 @@ html, body {
                  1px 1px #03B3FF,
                  -1px -1px 0 #03B3FF,
                  1px -1px 0 #03B3FF,
-                 -1px 1px 0 #03B3FF,
-                 0px 4px 4px rgba(0, 0, 0, 0.25); /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */
+                 -1px 1px 0 #03B3FF; 
+}
+
+.content h2 {
+    font-family: 'Bai Jumjuree', Verdana;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 55px;
+    letter-spacing: -0.01em;
+    color: #F7F7FF;
+    font-family: Bai Jamjuree;
+    text-align: left;
+
 }
 
 .content button {
     width: 284px;
     height: 57px;
     font-family: 'Bai Jamjuree', Verdana;
-    font-style: normal;
-    font-weight: bold; 
+    font-weight: 700; 
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.04em;
