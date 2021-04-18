@@ -58,7 +58,17 @@ html, body {
     line-height: 55px;
     letter-spacing: -0.01em;
     color: #F7F7FF;
-    font-family: Bai Jamjuree;
+    text-align: left;
+
+}
+
+.content h3 {
+    font-family: 'Bai Jumjuree', Verdana;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 26px;
+    color: #F7F7FF;
     text-align: left;
 
 }
@@ -80,6 +90,10 @@ html, body {
 .content button:hover {
     color: #03B3FF;
     border: solid #03B3FF 3px;
+}
+
+.content .join {
+    width: 304px
 }
 
 @media screen and (max-width: 768px) {

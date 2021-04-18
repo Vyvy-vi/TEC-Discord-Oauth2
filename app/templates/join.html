@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>{{user}} - join server</title>
+    <link href="../static/style.css" rel='stylesheet' type='text/css'>
+    <title>{{user}} - Join TEC's server</title>
     <script src="https://hcaptcha.com/1/api.js" async defer></script>
 </head>
 <body>
-    <center>
-    </center>
-
-    <div class="flex justify-center">
-        <div class="max-w-xs rounded shadow-lg
-        my-2 border-4" style="border-color: #d6ff00;">
-            <img class="w-full border-2 border-white bg-black" src="{{img}}" alt="TEC logo"/>
-        <div class="px-6 py-4 text-center">
-            <div class="font-bold text-xl mb-2">{{user}}</div>
-            <p class="text-gray-700 text-base">TEC - Advancing Token Engineering<br>Click below to join the server</p>
+    <section class="intro">
+        <div class="inner">
+            <div class="content">
+                <h1>Token Engineering Commons</h1>
+                <h3>Hey {{user}}! Fill in the captcha to join our Discord server!</h3>
+                    <form action="" method="POST">
+                      <div class="h-captcha" data-sitekey="{{ key }}"></div>
+                      <button type="submit" class="join">Join our Discord Server!</button>
+                    </form>
+            </div>
         </div>
-        <form action="" method="POST"><center>
-            <div class="h-captcha" data-sitekey={{ key }}></div>
-            <button type="submit" class="justify-center py-2 px-4 text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 focus:outline-none mb-2">Join</button>
-        </form></center>
-    </div>
-
+    </section>
 </body>
 </html>
