@@ -3,8 +3,8 @@
 The main problem with communicating on discord is that the accounts can easily be botted and thus launching DM spam and scam is quite easy on discord and currently there is no way of preventing this in Discord, without restricting DMs entirely for the server. A possible solution is to have an external site, where ppl are added to the server, only if they complete captcha.
 (this was specifically made for [TECommons' discord server](http://tecommons.org/), but can be modified to others' needs)
 
-## Walkthrough
-
+## Walkthrough 
+##### *NOTE - This is outdated
 <p align="center">
   <img src="https://user-images.githubusercontent.com/62864373/112768563-3369b280-903a-11eb-9d27-465f2572041d.gif" alt="Oauth Sample GIF"/>
 </p>
