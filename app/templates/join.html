@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <link href="../static/style.css" rel='stylesheet' type='text/css'>
-    <title>{{user}} - Join TEC's server</title>
+{% extends 'base.html' %}
+
+{% block title %}{{user}} - Join TEC's server{% endblock %}
+
+{% block scripts %}
     <script src="https://hcaptcha.com/1/api.js" async defer></script>
-</head>
-<body>
-    <section class="intro">
-        <div class="inner">
-            <div class="content">
-                <h1>Token Engineering Commons</h1>
-                <h3>Hey {{user}}! Fill in the captcha to join our Discord server!</h3>
-                    <form action="" method="POST">
-                      <div class="h-captcha" data-sitekey="{{ key }}"></div>
-                      <button type="submit" class="join">Join our Discord Server!</button>
-                    </form>
-            </div>
-        </div>
-    </section>
-</body>
-</html>
+{% endblock %}
+
+{% block content %}
+    <h3>Hey {{user}}! Fill in the captcha to join our Discord server!</h3>
+    <form action="" method="POST">
+        <div class="h-captcha" data-sitekey="{{ key }}"></div>
+        <button type="submit" class="join">Join our Discord Server!</button>
+    </form>
+{% endblock %}
