@@ -65,8 +65,8 @@ def me():
                     "Content-type": "application/json"
                 }
                 res = requests.put(url=url, json=data, headers=headers)
-                return "You have been added to the server"
-        return redirect(url_for('me'))
+                return redirect("https://discord.com/channels/810180621930070088/810183289863798815")
+    return redirect(url_for('me'))
 
 if __name__ == "__main__":
     app.run()

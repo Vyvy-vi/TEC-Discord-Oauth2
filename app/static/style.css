@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(https://media.discordapp.net/attachments/778704923553693752/832176288240238592/Screenshot_2021-04-15_at_2.06.20_PM.png) no-repeat 50% 50%;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.intro .inner {
+    display: table-cell;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 141px;
+}
+
+.content h1 {
+    font-family: 'Bai Jamjuree', Verdana;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 107px;
+    line-height: 124px;
+    /* or 116% */
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    /* text-shadow: 0 0 4px #03B3FF;*/
+    /*border: 2.7px solid #03B3FF;*/
+    text-shadow: 2px 0 0 #03B3FF,
+                 -2px 0 0 #03B3FF,
+                 0 2px 0 #03B3FF,
+                 0 -2px 0 #03B3FF,
+                 1px 1px #03B3FF,
+                 -1px -1px 0 #03B3FF,
+                 1px -1px 0 #03B3FF,
+                 -1px 1px 0 #03B3FF; 
+}
+
+.content h2 {
+    font-family: 'Bai Jumjuree', Verdana;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 55px;
+    letter-spacing: -0.01em;
+    color: #F7F7FF;
+    text-align: left;
+
+}
+
+.content h3 {
+    font-family: 'Bai Jumjuree', Verdana;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 26px;
+    color: #F7F7FF;
+    text-align: left;
+
+}
+
+.content button {
+    width: 284px;
+    height: 57px;
+    font-family: 'Bai Jamjuree', Verdana;
+    font-weight: 700; 
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: #0B0A15;
+    /* padding: 10px 20px; */
+    /* text-align: center; */
+    background: #DEFB48;
+}
+
+.content button:hover {
+    color: #03B3FF;
+    border: solid #03B3FF 3px;
+}
+
+.content .join {
+    width: 304px
+}
+
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 53px;
+        line-height: 62px;
+        letter-spacing: 0.01em;
+    }
+    .content button {
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+
+}
