@@ -6,7 +6,7 @@ from flask import Flask, redirect, url_for, render_template
 from flask import send_from_directory, request
 from flask_discord import DiscordOAuth2Session, requires_authorization, Unauthorized
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/')
 load_dotenv()
 app.secret_key = os.environ["SECRET_KEY"]
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "false"      # !! True Only in development environment.
