@@ -1,8 +1,18 @@
-{% extends 'base.html' %}
+{% extends '_base.html' %}
 
 {% block title %}Join TECommons' Discord Server{% endblock %}
 
 {% block content %}
-    <h2>Join our Discord server!</h2>
-    <a href="{{_link}}"><button type="submit"><b>LOG IN TO DISCORD</b></button></a>
+  <span class="block font-light py-5 xl:py-6 2xl:py-7 text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl">
+    Join our Discord Server!
+  </span>
+  <div class="inline-flex py-8 2xl:py-13 shadow items-center">
+    <a href="{{_link}}">
+    <button
+    type="submit"
+    class="uppercase font-semibold text-black px-10 py-3.5 sm:text-xl md:text-2xl 2xl:text-5xl h-14 xl:h-15 2xl:20">
+      Log in to Discord
+    </button>
+    </a>
+  </div>
 {% endblock %}

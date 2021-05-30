@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends '_base.html' %}
 
 {% block title %}{{user}} - Join TEC's server{% endblock %}
 
@@ -7,9 +7,17 @@
 {% endblock %}
 
 {% block content %}
-    <h3>Hey {{user}}! Fill in the captcha to join our Discord server!</h3>
-    <form action="" method="POST">
-        <div class="h-captcha" data-sitekey="{{ key }}"></div>
-        <button type="submit" class="join">Join our Discord Server!</button>
-    </form>
+  <span class="block font-light text-white py-5 xl:py-6 2xl:py-7 text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-8xl">
+    Hey {{ user }}!<br>Fill in the captcha to join our Discord server!
+  </span>
+  <form action="" method="POST">
+    <div class="h-captcha" data-sitekey="{{ key }}"></div>
+    <div class="inline-flex py-1 shadow items-center">
+      <button
+      type="submit"
+      class="uppercase px-10 font-semibold text-black sm:text-xl md:text-2xl 2xl:text-5xl h-14 xl:h-15 2xl:h-20">
+        Join our Discord Server!
+      </button>
+     </div>
+   </form>
 {% endblock %}

@@ -25,6 +25,7 @@ discord = DiscordOAuth2Session(app)
 
 @app.route('/')
 def index():
+    # return render_template('test.html')
     return render_template('index.html', _link='/login')
 
 @app.route('/favicon.ico')
@@ -70,3 +71,4 @@ def me():
 
 if __name__ == "__main__":
     app.run()
+
