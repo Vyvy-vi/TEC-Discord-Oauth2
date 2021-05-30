@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <title>Join TEC's discord</title>
+  <title>{% block title %} {% endblock %}</title>
 
   <meta charset="UTF-8" />
   <meta name="title" content="Join TEC's Discord Server" />
@@ -19,47 +18,33 @@
   <meta property="og:image" content="https://github.com/CommonsBuild/tec-branding-assets/blob/main/Marketing/LinkedIn/Profile.png?raw=true" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
-</head>
-<style>
-.highlight {
-font-family: 'Bai Jamjuree', Verdana;
-text-shadow: 2px 0 0 #03B3FF,
-             -2px 0 0 #03B3FF,
-             0 2px 0 #03B3FF,
-             0 -2px 0 #03B3FF,
-             1px 1px #03B3FF,
-             -1px -1px 0 #03B3FF,
-             1px -1px 0 #03B3FF,
-             -1px 1px 0 #03B3FF; 
 
+  {% block scripts %} {% endblock %}
+</head>
+
+<style>
+.glow {
+  font-family: 'Bai Jamjuree',;
+  text-shadow: 0 0 5px #fff, 0 0 10px #03B3FF, 0 0 15px #0F2EEE, 0 0 20px #0F2EEE;
 }
-a {
+button {
   background-color: #defb48;
+  font-family: 'Bai Jamjuree', Verdana;
 }
-a:hover {
+button:hover {
   background-color: #7c9403;
 }
 </style>
-  <body class="m-0 p-0 h-screen">
-<div class="bg-cover h-screen" style="background-image: url(https://media.discordapp.net/attachments/778704923553693752/832176288240238592/Screenshot_2021-04-15_at_2.06.20_PM.png)">
-  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:items-center lg:justify-between">
-    <span class="text-6xl lg:text-9xl md:text-8xl font-bold tracking-light sm:text-7xl highlight">
-      Token Engineering Commons
-    </span>
-    <span class="block text-3xl font-light py-5 xl:py-6 2xl:py-7 text-white sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl">
-      Join our Discord Server!
-    </span>
-    <div class="mt-8 flex">
-      <div class="inline-flex rounded-none py-9 xl:py-10 2xl:py-13 shadow">
-        <a
-        href="#"
-        class="uppercase px-10 py-3 sm:py-4 md:py-5 lg:py-5 2xl:py-7 sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-semibold text-black">
-          Log in to Discord
-        </a>
-      </div>
+
+<body class="m-0 p-0 h-screen">
+  <div class="bg-cover h-screen" style="background-image: url(https://media.discordapp.net/attachments/778704923553693752/832176288240238592/Screenshot_2021-04-15_at_2.06.20_PM.png)">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:items-center lg:justify-between">
+      <span class="text-6xl lg:text-9xl md:text-8xl font-bold tracking-light sm:text-7xl glow">
+        Token Engineering Commons
+      </span>
+      {% block content %}
+      {% endblock %}
     </div>
   </div>
-</div>
-  </body>
+</body>
 </html>
-
