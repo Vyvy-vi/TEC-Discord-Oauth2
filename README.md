@@ -29,6 +29,7 @@ The main problem with communicating on discord is that the accounts can easily b
   - `CAPTCHA_KEY`: hCaptcha Key from https://www.hcaptcha.com/
   - `SITE_KEY`: hCaptcha site-key(to be obtained by adding a domain on the hcaptcha dashboard)
   - `HOST DOMAIN`: If deploying locally, set this as "http://127.0.0.1:5000"
+  - `MONGO_URI`: MongoDB Atlas Connection URI- This can be obtained from the Cloud Mongoinstance config panel(*Docs to be made about this*)
 - Install pipenv
   ```
   pip install pipenv
