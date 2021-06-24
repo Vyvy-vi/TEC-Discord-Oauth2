@@ -9,6 +9,7 @@ requests = "*"
 flask-discord = "*"
 python-dotenv = "*"
 gunicorn = "*"
+aiohttp = ">=3.7.4"
 
 [dev-packages]
 pylint-runner = "*"
