@@ -44,6 +44,6 @@ The main problem with communicating on discord is that the accounts can easily b
 
 ## How to set up the discord Application?
 - Go to https://discord.com/developers/applications and create a `New Application`. Give it suitable name and suitable profile picture.
-- Go to the `Oauth` tab for the application, and add `http://127.0.0.1/callback` and `<your-site-link/callback>` to the the Redirect URI field.
+- Go to the `Oauth` tab for the application, and add `http://http://127.0.0.1:5000/callback` and `<your-site-link/callback>` to the the Redirect URI field.
 - Go to the `Bot` tab for the application, and create a new bot. Invite this bot to your discord server, with the following permissions- [CREATE INVITE]. (The one, on which you want to run the invite application)
 - Copy the Client ID, Client Secret and the BOT_TOKEN and add these to the `.env` file.
